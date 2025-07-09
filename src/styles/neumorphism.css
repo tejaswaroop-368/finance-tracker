@@ -1,0 +1,98 @@
+:root {
+  --bg: #e0e0e0;
+  --light: #ffffff;
+  --dark: #bebebe;
+  --radius: 20px;
+  --transition: 0.3s ease-in-out;
+  --text: #333;
+}
+
+body {
+  background: var(--bg);
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+}
+
+.neu-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.neu-card {
+  background: var(--bg);
+  border-radius: var(--radius);
+  box-shadow: 9px 9px 16px var(--dark),
+              -9px -9px 16px var(--light);
+  padding: 1.5rem;
+  transition: var(--transition);
+}
+
+.neu-card:hover {
+  box-shadow: inset 6px 6px 12px var(--dark),
+              inset -6px -6px 12px var(--light);
+}
+
+input, select, textarea {
+  border: none;
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  background: var(--bg);
+  box-shadow: inset 3px 3px 6px var(--dark),
+              inset -3px -3px 6px var(--light);
+  transition: var(--transition);
+  width: 100%;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 4px var(--dark),
+              inset -2px -2px 4px var(--light);
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  padding: 0.6rem 1.2rem;
+  background: var(--bg);
+  box-shadow: 3px 3px 6px var(--dark),
+              -3px -3px 6px var(--light);
+  transition: var(--transition);
+  font-weight: 600;
+}
+
+button:hover {
+  box-shadow: inset 2px 2px 4px var(--dark),
+              inset -2px -2px 4px var(--light);
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg);
+  box-shadow: 6px 6px 12px var(--dark),
+              -6px -6px 12px var(--light);
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--dark);
+}
+
+.progress {
+  background: var(--light);
+  border-radius: var(--radius);
+  box-shadow: inset 3px 3px 6px var(--dark),
+              inset -3px -3px 6px var(--light);
+  overflow: hidden;
+}
+
+.progress-bar {
+  border-radius: var(--radius);
+  transition: width 0.5s;
+}
